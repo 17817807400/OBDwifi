@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myobd.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#772222">
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#222277"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ></LinearLayout>
+            <TextView
+                android:textColor="#eeeeee"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/stop"
+                android:gravity="center_horizontal"
+                android:text="连接OBD" />
+
+            <TextView
+
+                android:gravity="center_horizontal"
+                android:textColor="#eeeeee"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="Home" />
+
+            <TextView
+
+                android:gravity="center_horizontal"
+                android:textColor="#eeeeee"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="Back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000022"></LinearLayout>
+
+            <Button
+                android:layout_weight="4"
+                android:id="@+id/main_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登记"/>
+            <Button
+                android:layout_weight="4"
+                android:id="@+id/main_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="检测"/>
+            <Button
+                android:layout_weight="4"
+                android:id="@+id/main_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传"/>
+            <Button
+                android:layout_weight="4"
+                android:id="@+id/main_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新版本"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
