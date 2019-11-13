@@ -19,6 +19,7 @@
     </FrameLayout>
 
         <LinearLayout
+            android:id="@+id/menu"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:background="#222277"
@@ -28,38 +29,35 @@
                 android:layout_height="50dp"
                 ></LinearLayout>
             <TextView
-                android:textColor="#eeeeee"
+                android:textColor="@drawable/textclick"
                 android:textStyle="bold"
-                android:layout_weight="1"
                 android:id="@+id/connect"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="33dp"
                 android:layout_alignRight="@+id/stop"
                 android:gravity="center_horizontal"
                 android:text="连接OBD" />
 
             <TextView
 
-                android:gravity="center_horizontal"
-                android:textColor="#eeeeee"
-                android:textStyle="bold"
-                android:layout_weight="1"
                 android:id="@+id/home"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_height="33dp"
                 android:layout_alignParentRight="true"
-                android:text="Home" />
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="Home"
+                android:textColor="@drawable/textclick"
+                android:textStyle="bold" />
 
             <TextView
 
                 android:gravity="center_horizontal"
-                android:textColor="#eeeeee"
+                android:textColor="@drawable/textclick"
                 android:textStyle="bold"
-                android:layout_weight="1"
                 android:id="@+id/back"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="33dp"
                 android:layout_gravity="center_vertical"
                 android:layout_alignParentRight="true"
                 android:text="Back" />
@@ -69,30 +67,102 @@
                 android:layout_height="2dp"
                 android:background="#000022"></LinearLayout>
 
-            <Button
-                android:layout_weight="4"
-                android:id="@+id/main_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="登记"/>
-            <Button
-                android:layout_weight="4"
-                android:id="@+id/main_test"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="检测"/>
-            <Button
-                android:layout_weight="4"
-                android:id="@+id/main_upload"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="上传"/>
-            <Button
-                android:layout_weight="4"
-                android:id="@+id/main_update"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="更新版本"/>
+
+            <LinearLayout
+
+                android:id="@+id/page1"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/bt_login"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="登记"/>
+                    <Button
+                        android:id="@+id/bt_obd"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="OBD"/>
+                    <Button
+                        android:id="@+id/bt_envior"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="环检"/>
+                    <Button
+                        android:id="@+id/bt_rev"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="转速"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/page2"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/bt_obdreport"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="报告"/>
+                    <Button
+                        android:id="@+id/bt_detail"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="详细"/>
+                </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/page3">
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <Button
+                            android:id="@+id/bt_fasttest"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="快速检测"/>
+                        <Button
+                            android:id="@+id/bt_carinfo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="车辆信息"/>
+                        <Button
+                            android:id="@+id/bt_dtc"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="DTC"/>
+                        <Button
+                            android:id="@+id/bt_cold"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="冻结帧"/>
+                        <Button
+                            android:id="@+id/bt_realtime"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="实时"/>
+                        <Button
+                            android:id="@+id/bt_iupr"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="IUPR"/>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+            </LinearLayout>
+
         </LinearLayout>
     </RelativeLayout>
 

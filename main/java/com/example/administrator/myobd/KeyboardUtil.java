@@ -30,7 +30,7 @@ public class KeyboardUtil {
      */
     private Keyboard numberKeyboard;
 
-    KeyboardUtil(Activity activity, EditText edit) {
+    public  KeyboardUtil(Activity activity, EditText edit) {
         mActivity = activity;
         mEdit = edit;
         provinceKeyboard = new Keyboard(activity, R.xml.keyboard_num);
